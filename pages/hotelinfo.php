@@ -70,7 +70,7 @@ if($_SESSION['ruser'] || $_SESSION['radmin']) {
         echo "<div class='m-2' style='background-color: beige;border-radius: 25px;padding-top: 10px;padding-left: 5px;padding-right: 5px;'><p>$row[1]<p/></div>";
         if($_SESSION['radmin']){
             echo "<input type='hidden' name='volCom' value='$row[0]'>";
-            echo '<input type="submit" name="delCom" value="x" class="btn btn-danger btn-sm" style="height: 40px;padding-top: ">';
+            echo '<input type="submit" name="delCom" value="x" class="btn btn-danger btn-sm" style="height: 40px;margin-top: 10px">';
         }
     }
 

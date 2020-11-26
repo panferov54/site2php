@@ -73,7 +73,7 @@ foreign  key(roleid) references roles(id) on delete cascade
 $ct7='CREATE TABLE comments(
 id int not null auto_increment primary key,
 hotelid int,
-foreign  key(hotelid) references hotels(id) ,
+foreign  key(hotelid) references hotels(id) on delete cascade,
 comment varchar(2048) 
 )default charset="utf8"';
 
